@@ -1,0 +1,26 @@
+### GET All tasks
+GET http://localhost:8000/api/v1/tasks
+
+### GET task by id
+GET http://localhost:8000/api/v1/tasks/63c3393a25729a56aa6a2c40
+
+### POST save task
+POST http://localhost:8000/api/v1/tasks
+Content-Type: application/json
+
+{
+  "title": "Learn JWT",
+  "completed": false
+}
+
+### Update task by id
+PATCH  http://localhost:8000/api/v1/tasks/63c3474df03b8c691970a570
+Content-Type: application/json
+
+{
+  "title": "Learn SSR and API"
+}
+
+### Delete task by id
+DELETE  http://localhost:8000/api/v1/tasks/63c3480ecfc381668446ebef
+
